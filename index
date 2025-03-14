@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Muchire - Computer Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="hidden">
+        <i class="fas fa-moon"></i>
+    </button>
+    <button id="color-picker-btn" class="hidden">
+        <i class="fas fa-palette"></i>
+    </button>
+    <input type="color" id="color-picker" hidden>
+    
+    <!-- Update your script section -->
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="John_Muchire_CV.pdf" download class="cv-download">Download CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero hidden">
+        <div class="hero-content">
+            <h1 class="hidden">John Muchire, Kenya</h1>
+            <h2 class="hidden">Computer Science & Machine Learning Researcher</h2>
+            <img src="C:/Users/johnii/Desktop/john/profile.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section hidden">
+        <div class="container">
+            <h2 class="hidden">About Me</h2>
+            <p class="hidden">A passionate BSc Computer Science student at Dedan Kimathi University of Technology with 2+ years of experience in full-stack development, machine learning research, and cloud computing. Proven track record in delivering data-driven solutions and contributing to cutting-edge research in polygene analysis. Also an experienced online remote writer delivering quality outcomes.</p>
+        </div>
+    </section>
+    <div class="color-presets" id="color-presets">
+        <div class="color-option" style="background: #FFFFFF" onclick="applyColor('#FFFFFF')"></div>
+        <div class="color-option" style="background: #F5F5F5" onclick="applyColor('#F5F5F5')"></div>
+        <div class="color-option" style="background: #FAF3E0" onclick="applyColor('#FAF3E0')"></div>
+        <div class="color-option" style="background: #E3F2FD" onclick="applyColor('#E3F2FD')"></div>
+        <div class="color-option" style="background: #E8F5E9" onclick="applyColor('#E8F5E9')"></div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section hidden">
+        <div class="container">
+            <h2 class="hidden">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card hidden">
+                    <i class="fab fa-python"></i>
+                    <h3>Python & ML</h3>
+                    <p>TensorFlow, PyTorch, Scikit-learn</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fab fa-react"></i>
+                    <h3>React & Node.js</h3>
+                    <p>MERN Stack Development</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB, Firebase, Azure, AWS</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fab fa-microsoft"></i>
+                    <h3>Azure Cloud</h3>
+                    <p>DevOps, CI/CD Pipelines</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networking</h3>
+                    <p>Cisco Certified (CCNA)</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fas fa-tools"></i>
+                    <h3>Dev Tools</h3>
+                    <p>Git, Docker, Postman, PowerBI, Tableau, Anydesk</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Frontend & Backend Development</p>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fas fa-code"></i>
+                    <h3>C++</h3>
+                    <p>Competitive Programming & System Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section hidden">
+        <div class="container">
+            <h2 class="hidden">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card hidden">
+                    <div class="project-header">
+                        <i class="fas fa-dna"></i>
+                        <h3>Polygene ML Predictor</h3>
+                    </div>
+                    <p>Deep learning model for gene expression analysis using PyTorch</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Azure ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link">Case Study</a>
+                        <a href="#" class="code-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card hidden">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Sales Analytics Dashboard</h3>
+                    </div>
+                    <p>Real-time business intelligence solution with PowerBI,Tableau</p>
+                    <div class="tech-stack">
+                        <span>PowerBI</span>
+                        <span>Tableau</span>
+                        <span>SQL</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link">Live Demo</a>
+                        <a href="#" class="code-link">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section hidden">
+        <div class="container">
+            <h2 class="hidden">Education</h2>
+            <button class="toggle-btn hidden" onclick="toggleEducation()">Show Education</button>
+            <div id="education-content" class="education-grid">
+                <div class="edu-box hidden">
+                    <i class="fas fa-university"></i>
+                    <h3>Dedan Kimathi University of Technology</h3>
+                    <p><strong>BSc Computer Science</strong></p>
+                    <p>Present</p>
+                    
+                </div>
+                <div class="edu-box hidden">
+                    <i class="fas fa-school"></i>
+                    <h3>Karima Boys High School</h3>
+                    <p><strong>KCSE</strong></p>
+                    <p>Grade: A- (Minus)</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section hidden">
+        <div class="container">
+            <h2 class="hidden">Professional Experience</h2>
+            <div class="experience-item hidden">
+                <h3>Machine Learning Researcher - Polygene Research</h3>
+                <p class="date">Jan 2023 - Present</p>
+                <ul>
+                    <li>Developed predictive models for gene expression analysis</li>
+                    <li>Implemented deep learning architectures using PyTorch</li>
+                    <li>Published research in IEEE Transactions on Biomedical Engineering</li>
+                </ul>
+            </div>
+            <div class="experience-item hidden">
+                <h3>Full Stack Developer - Tech Solutions Writers</h3>
+                <p class="date">Jun 2024 - Present</p>
+                <ul>
+                    <li>Built React-based dashboard with Node.js backend</li>
+                    <li>Integrated Azure DevOps pipelines</li>
+                    <li>Optimized MongoDB queries by 40%</li>
+                    <li>Delivering tailored solutions with features like e-commerce functionality and user authentication</li>
+                </ul>
+            </div>
+            <div class="experience-item hidden">
+                <h3>Projects</h3>
+                <p class="date">Jan 2022 - Present</p>
+                <ul>
+                    <li><strong>Smart Homes Project</strong> – Developed using React for home automation and IoT integration.</li>
+                    <li><strong>Hospital Management System</strong> – Built with Nuxt.js to streamline hospital operations.</li>
+                    <li><strong>Bus Commuting System</strong> – Developed using JavaScript, PHP, and MySQL for efficient bus ticketing.</li>
+                    <li><strong>Android App (LinkedIn-like)</strong> – Created a professional networking app similar to LinkedIn.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section hidden">
+        <div class="container">
+            <h2 class="hidden">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form hidden">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required rows="5"></textarea>
+                    <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="contact-info hidden">
+                    <p><i class="fas fa-phone"></i> <a href="tel:+254768161533">+254 768 161 533</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:johnmuchire45@gmail.com">johnmuchire45@gmail.com</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/yourusername">GitHub Profile</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/john-muchire">LinkedIn Profile</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nyeri, Kenya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hidden">
+        <p>&copy; 2025 John Muchire. Hosted on GitHub Pages. Available online; response within 15 min.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        });
+
+        document.querySelectorAll('.hidden').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', 
+                document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+            );
+        });
+
+        // Initialize Theme
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+
+        // Education Toggle
+        function toggleEducation() {
+            const eduContent = document.getElementById('education-content');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            eduContent.classList.toggle('show');
+            toggleBtn.textContent = eduContent.classList.contains('show') 
+                ? 'Hide Education' 
+                : 'Show Education';
+            
+            document.querySelectorAll('.edu-box.hidden').forEach(el => {
+                if(eduContent.classList.contains('show')) observer.observe(el);
+            });
+        }
+        // Color Picker Functionality
+    const colorPickerBtn = document.getElementById('color-picker-btn');
+    const colorPicker = document.getElementById('color-picker');
+
+    colorPickerBtn.addEventListener('click', () => colorPicker.click());
+    
+    colorPicker.addEventListener('input', (e) => {
+        const selectedColor = e.target.value;
+        document.documentElement.style.setProperty('--bg-color', selectedColor);
+        localStorage.setItem('customBgColor', selectedColor);
+    });
+
+    // Load custom color on startup
+    const savedColor = localStorage.getItem('customBgColor');
+    if(savedColor) {
+        document.documentElement.style.setProperty('--bg-color', savedColor);
+    }
+
+    // Reset to default colors
+    function resetColors() {
+        document.documentElement.style.removeProperty('--bg-color');
+        localStorage.removeItem('customBgColor');
+    }
+    </script>
+    <footer>
+        <p>&copy; 2025 John Muchire.Available online; response within 15 min. </p>
+    </footer>
+</body>
+</html>
