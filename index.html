@@ -316,6 +316,20 @@
             const savedColor = localStorage.getItem('pageColor');
             if (savedColor) document.body.style.backgroundColor = savedColor;
         });
+            // Education Toggle
+            function toggleEducation() {
+            const eduContent = document.getElementById('education-content');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            eduContent.classList.toggle('show');
+            toggleBtn.textContent = eduContent.classList.contains('show') 
+                ? 'Hide Education' 
+                : 'Show Education';
+            
+            document.querySelectorAll('.edu-box.hidden').forEach(el => {
+                if(eduContent.classList.contains('show')) observer.observe(el);
+            });
+        }
+   
     </script>
 </body>
 </html>
