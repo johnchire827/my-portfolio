@@ -88,15 +88,39 @@ nav a:hover, .cv-download {
     position: absolute;
     width: 200px;
     height: 200px;
-    right: -15px; /* Adjust these values to control offset */
+    right: -15px;
     bottom: -15px;
-    border-right: 3px solid #7614e6; /* Visible right border */
-    border-bottom: 3px solid #7614e6; /* Visible bottom border */
-    border-top: 3px solid transparent; /* Hidden top border */
-    border-left: 3px solid transparent; /* Hidden left border */
+    border-right: 3px solid #7614e6;
+    border-bottom: 3px solid #7614e6;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
     z-index: -1;
     transition: all 0.3s ease;
+    
+    /* New glow effects */
+    box-shadow: 
+        /* Right border glow (red) */
+        8px 0 15px -3px rgba(255, 0, 0, 0.8),
+        /* Bottom border glow (blue) */
+        0 8px 15px -3px rgba(0, 255, 255, 0.8);
+    
+    animation: border-glow 1.5s infinite;
 }
+
+@keyframes border-glow {
+    0%, 100% {
+        box-shadow: 
+            5px 0 10px -3px rgba(255, 0, 0, 0.6),
+            0 5px 10px -3px rgba(0, 255, 255, 0.6);
+    }
+    50% {
+        box-shadow: 
+            12px 0 20px -3px rgba(255, 0, 0, 0.9),
+            0 12px 20px -3px rgba(0, 255, 255, 0.9);
+    }
+}
+
+/* Update hover effect */
 
 .profile-img {
     position: relative;
@@ -117,8 +141,12 @@ nav a:hover, .cv-download {
     transform: translate(-5px, -5px); /* Optional: Move image on hover */
 }
 
+/* Update hover effect */
 .profile-img:hover ~ .profile-border {
-    border-color: #4355ff; /* Optional: Change border color on hover */
+    box-shadow: 
+        15px 0 25px -3px rgba(255, 0, 0, 0.9),
+        0 15px 25px -3px rgba(0, 255, 255, 0.9);
+    animation: none;
 }
 .section {
     padding: 4rem 0;
