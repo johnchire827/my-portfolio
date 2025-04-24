@@ -79,12 +79,14 @@ nav a:hover, .cv-download {
 }
 
 .profile-img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: none;
-    margin: 2rem auto;
-    border: none; /* Remove the white border */
-   
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #fff; /* Optional white border */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional subtle shadow */
 }
 
 /* Sections */
