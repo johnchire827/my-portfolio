@@ -97,26 +97,33 @@ nav a:hover, .cv-download {
     z-index: -1;
     transition: all 0.3s ease;
     
-    /* New glow effects */
+  /* Enhanced glow effects */
     box-shadow: 
         /* Right border glow (red) */
-        8px 0 15px -3px rgba(255, 0, 0, 0.8),
-        /* Bottom border glow (blue) */
-        0 8px 15px -3px rgba(0, 255, 255, 0.8);
+        10px 0 25px -2px rgba(255, 0, 0, 0.95),
+        /* Bottom border glow (cyan) */
+        0 10px 25px -2px rgba(0, 255, 255, 0.95),
+        /* Additional glow layers */
+        15px 0 35px -1px rgba(255, 0, 0, 0.7),
+        0 15px 35px -1px rgba(0, 255, 255, 0.7);
     
-    animation: border-glow 1.5s infinite;
+    animation: border-glow 1.2s infinite;
 }
 
 @keyframes border-glow {
     0%, 100% {
         box-shadow: 
-            5px 0 10px -3px rgba(255, 0, 0, 0.6),
-            0 5px 10px -3px rgba(0, 255, 255, 0.6);
+            8px 0 20px -2px rgba(255, 0, 0, 0.9),
+            0 8px 20px -2px rgba(0, 255, 255, 0.9),
+            12px 0 30px -1px rgba(255, 0, 0, 0.7),
+            0 12px 30px -1px rgba(0, 255, 255, 0.7);
     }
     50% {
         box-shadow: 
-            12px 0 20px -3px rgba(255, 0, 0, 0.9),
-            0 12px 20px -3px rgba(0, 255, 255, 0.9);
+            15px 0 40px -1px rgba(255, 0, 0, 1),
+            0 15px 40px -1px rgba(0, 255, 255, 1),
+            20px 0 50px 0px rgba(255, 0, 0, 0.8),
+            0 20px 50px 0px rgba(0, 255, 255, 0.8);
     }
 }
 
@@ -144,9 +151,10 @@ nav a:hover, .cv-download {
 /* Update hover effect */
 .profile-img:hover ~ .profile-border {
     box-shadow: 
-        15px 0 25px -3px rgba(255, 0, 0, 0.9),
-        0 15px 25px -3px rgba(0, 255, 255, 0.9);
-    animation: none;
+        20px 0 50px 0px rgba(255, 0, 0, 1),
+        0 20px 50px 0px rgba(0, 255, 255, 1),
+        25px 0 60px 5px rgba(255, 0, 0, 0.9),
+        0 25px 60px 5px rgba(0, 255, 255, 0.9);
 }
 .section {
     padding: 4rem 0;
