@@ -264,7 +264,7 @@
                     <p><i class="fas fa-envelope"></i> <a href="mailto:johnmuchire45@gmail.com">johnmuchire45@gmail.com</a></p>
                     <p><i class="fab fa-github"></i> <a href="https://github.com/yourusername">GitHub Profile</a></p>
                     <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/john-muchire">LinkedIn Profile</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> Nyeri, Kenya</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <a href="#" id="location-link">Nyeri, Kenya</a></p>
                 </div>
             </div>
         </div>
@@ -360,6 +360,25 @@
                 if(eduContent.classList.contains('show')) observer.observe(el);
             });
         }
+        // Location Tracking Functionality
+document.getElementById('location-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            // If user allows location access
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            window.open(`https://www.google.com/maps?q=${latitude},${longitude}`, '_blank');
+        }, function(error) {
+            // If user denies location access, show default Nyeri location
+            window.open('https://www.google.com/maps/place/Nyeri,+Kenya', '_blank');
+        });
+    } else {
+        // If geolocation is not supported
+        window.open('https://www.google.com/maps/place/Nyeri,+Kenya', '_blank');
+    }
+});
    
     </script>
 </body>
